@@ -1,0 +1,144 @@
+.container {
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.cell {
+  border-radius: 16px;
+  border: 1px solid var(--border-yellow);
+  padding: 10px 10px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(183, 183, 183, 0.15);
+  /* max-height: 300px; */
+  height: 330;
+  background-color: rgba(41, 41, 41, 0.3);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-white);
+  margin-bottom: 3px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-white);
+  margin-bottom: 3px;
+}
+
+.counter-box {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn-counter {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-minus {
+  background: var(--bg-white);
+  color: var(--text-dark);
+}
+
+.btn-minus:hover {
+  background: rgb(229, 226, 55);
+  transform: scale(1.1);
+}
+
+.btn-plus {
+  background: var(--bg-white);
+  color: var(--text-dark);
+}
+
+.btn-plus:hover {
+  background: rgb(229, 226, 55);
+  transform: scale(1.1);
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 400px;
+  color: var(--text-dark);
+  min-width: 80px;
+  background-color: var(--bg-white);
+  border-radius: 8px;
+}
+
+.btn-add {
+  background: linear-gradient(#000000 0%, #ffffff 100%);
+  color: var(--text-white);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-add:hover {
+  background: linear-gradient(#000000 0%, #cfbf2e 100%);
+  transform: scale(1.05);
+}
+
+.cell img {
+  width: 80%;
+  height: 40%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.zoom-in-out-element {
+  animation: zoom-in-zoom-out 1s ease infinite;
+  font-size: 16px;
+  font-weight: 400px;
+  color: var(--text-white);
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 120%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans+Hebrew:wght@100..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Stack+Sans+Headline:wght@200..700&display=swap");
+
+body {
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  background-image: url("../images/background/bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #1f2226;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}

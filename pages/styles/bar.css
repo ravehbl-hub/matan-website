@@ -1,0 +1,31 @@
+.side-bar {
+  border-left: 1px solid var(--bg-border);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  color: var(--text-white);
+  border-color: var(--border-yellow);
+  border-radius: 20px;
+  border-bottom: 2px solid rgba(255, 255, 0, 0.475);
+  transition: all 0.4s;
+  font-size: 20px;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid var(--border-yellow);
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--text-yellow);
+}

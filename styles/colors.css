@@ -1,0 +1,23 @@
+:root {
+  /* צבעים עיקריים */
+  --primry-color: #f2e530;
+  --primry-dark-color: #0d0d0d;
+  --success-color: #ecf22e;
+  --danger-color: #ff4c4c;
+
+  /* טקסט */
+  --text-dark: #1f2226;
+  --text-yellow: #f2e530;
+  --text-light: #6c757d;
+  --text-white: #ffffff;
+
+  /*  רקעים */
+  --bg-white: #ffffff;
+  --bg-light: #e7e7e7;
+  --bg-dark: #1f2226;
+  --bg-yellow: #f2e530;
+
+  /* גבולות */
+  --border-color: #e0e0e0;
+  --border-yellow: #f2e530;
+}
